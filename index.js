@@ -16,7 +16,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.post("/send-data", async (req, res) => {
+app.get("/send-data", async (req, res) => {
   try {
     const messageData = {
       from: `${req.body.firstname} ${req.body.lastname}<${req.body.email}>`,
