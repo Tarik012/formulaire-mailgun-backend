@@ -37,5 +37,5 @@ app.post("/send-data", async (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log("Server startd");
+  console.log("Server started");
 });
