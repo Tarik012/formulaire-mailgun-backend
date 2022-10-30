@@ -10,11 +10,7 @@ const Mailgun = require("mailgun.js");
 
 const mailgun = new Mailgun(formData);
 
-let client;
-try {
-  client = mailgun.client({ username: "api", key: API_KEY });
-  //console.log(client);
-} catch (error) {}
+const client = mailgun.client({ username: "api", key: API_KEY });
 
 const app = express();
 app.use(express.json());
